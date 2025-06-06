@@ -1,6 +1,6 @@
- # 🧠 Exercícios de Lógica de Programação em Rust
+ # 🧠 Exercícios de Lógica de Programação em c++
 
-Este repositório contém exercícios de lógica de programação que estou resolvendo para treinar minha base em desenvolvimento e fortalecer meu raciocínio lógico, usando a linguagem **Rust**.
+Este repositório contém exercícios de lógica de programação que estou resolvendo para treinar minha base em desenvolvimento e fortalecer meu raciocínio lógico, usando a linguagem **c++**.
 
 ---
 
