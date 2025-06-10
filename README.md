@@ -1,6 +1,7 @@
- # 🧠 Exercícios de Lógica de Programação em c++
+ # 🧠 Exercícios de Lógica de Programação em java
+ 
 
-Este repositório contém exercícios de lógica de programação que estou resolvendo para treinar minha base em desenvolvimento e fortalecer meu raciocínio lógico, usando a linguagem **c++**.
+Este repositório contém exercícios de lógica de programação que estou resolvendo para treinar minha base em desenvolvimento e fortalecer meu raciocínio lógico, usando a linguagem **JAVA**.
 
 ---
 
