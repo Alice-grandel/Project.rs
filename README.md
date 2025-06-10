@@ -25,3 +25,4 @@ Praticar a lógica de programação de forma consistente, reforçando conceitos 
     Pequenos projetos com foco em lógica
 
     
+ 
