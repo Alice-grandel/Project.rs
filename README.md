@@ -202,3 +202,79 @@ int main() {
     return 0;
 }
  ```
+# EXERCICIO RUST: 4
+
+CAIXA ELETRONICO: Faça um Programa para um caixa eletrônico.
+```
+O programa deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas.
+
+As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais.
+
+O programa não deve se preocupar com a quantidade de notas existentes na máquina.
+
+Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+
+Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+
+
+```
+# CODIGO:
+
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int  saque, valor_restante;
+    int nota100, nota50, nota20, nota10, nota1;
+    char ops;
+    do {
+        cout << "\n[BEM-VINDOS]\n" << endl;
+        cout << "\nNOTAS DISPONIVEIS: 100 reais, 50 reais, 20 reais, 10 reais, 5 reais, 1 real\n" << endl;
+
+        cout << "\nQUANTO VOCE GOSTARIA DE SACAR? DISPONIVEL DE 10 A R$600.0 reais\n" << endl;
+        cin >> saque;
+
+        if (saque >= 10 && saque <= 600) {
+            cout << "saque autorizado de " << saque << endl;
+        
+        valor_restante = saque;
+        
+        nota100 = valor_restante / 100;
+         valor_restante %= 100;
+
+        nota50 = valor_restante / 50;
+         valor_restante %= 50;
+        
+        nota20 = valor_restante / 20;
+         valor_restante %= 20;
+        
+        nota10 = valor_restante / 10;
+         valor_restante %= 10;
+        
+        nota1 = valor_restante / 1 ;
+         valor_restante %= 1;
+
+        cout << "[NOTAS-FORNECIDAS]" << endl;
+        if (nota100 > 0) cout << "foram fornecidas " << nota100 << " de 100 reais " << endl;
+        if (nota50 > 0) cout << "foram fornecidas " << nota50 << " de 50 reais " << endl;
+        if (nota20 > 0) cout << "foram fornecidas " << nota20 << " de 20 reais " << endl;
+        if (nota10 > 0) cout << "foram fornecidas " << nota10 << " de 10 reais " << endl;
+        if (nota1 > 0)cout << "foram fornecidas " << nota1 << " de 1 real " << endl;
+
+    } else {
+            cout << "Valor invalido escolha algo entre 10 e 600" << endl;
+        }
+
+        cout << "----------------------------------------" << endl;
+        cout << "Gostaria de reiniciar o caixa? [S/N]";
+        cin >> ops;
+
+    } while (ops == 'S' || ops == 's');
+
+    cout << "[CAIXA-FECHADO]!";
+    
+}
+```
