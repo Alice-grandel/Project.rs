@@ -1,4 +1,4 @@
- # 🧠 Exercícios de Lógica de Programação em java
+ # 🧠 Exercícios de Lógica de Programação em c++
  
 
 Este repositório contém exercícios de lógica de programação que estou resolvendo para treinar minha base em desenvolvimento e fortalecer meu raciocínio lógico, usando a linguagem **C++**.
@@ -108,4 +108,97 @@ int main() {
     cout << "\n[CALCULADORA ENCERRADA!]\n";
 }
    ```
- 
+# EXERCICIO C++: 2
+FOLHA DE PAGAMENTO:
+
+Faça um programa para cálculo de uma folha de pagamento, considerando os seguintes descontos e regras:
+
+    Imposto de Renda (IR) descontado conforme tabela do salário bruto:
+
+        Até R$ 900,00 (inclusive): isento
+
+        Até R$ 1500,00 (inclusive): 5%
+
+        Até R$ 2500,00 (inclusive): 10%
+
+        Acima de R$ 2500,00: 20%
+
+    Desconto de 10% para o INSS.
+
+    FGTS corresponde a 11% do salário bruto, mas não é descontado do trabalhador — é um depósito feito pela empresa.
+
+    O salário líquido é o salário bruto menos os descontos (IR + INSS).
+
+O programa deverá solicitar ao usuário:
+
+    Valor da hora trabalhada.
+
+    Quantidade de horas trabalhadas no mês.
+
+    Exemplo de saída: 
+    Salário Bruto:                 : R$ 1100,00
+    IR (5%)                       : R$   55,00
+    INSS (10%)                    : R$  110,00
+    FGTS (11%)                    : R$  121,00
+    Salário Líquido               : R$  935,00
+
+   FOLHA DE PAGAMENTO:
+
+ ```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    double salario_hora, hora_trabalhada, salario_bruto, percentual;
+    double ir, inss, fgts, salario_liquido;
+    char ops;
+
+    do {
+            cout << "[BEM-VINDOS!]";
+    cout << "\nQuanto vc ganha por hora?\n" << endl;
+    cin >> salario_hora;
+
+
+    cout << "\nQuantas horas vc trabalha por mes?\n";
+    cin >> hora_trabalhada;
+
+    salario_bruto = salario_hora * hora_trabalhada;
+
+        if  (salario_bruto <= 900.0) {
+            percentual = 0.0;
+        } else if (salario_bruto <= 1500.0) {
+            percentual = 5.0;
+        } else if (salario_bruto <= 2500.0) {
+            percentual = 10.0;
+        } else {
+            percentual = 20.0;
+        }
+
+        ir = salario_bruto * (percentual / 100.0);
+        inss = salario_bruto * 0.10;
+        fgts = salario_bruto * 0.11;
+        salario_liquido = salario_bruto - ir - inss;
+
+
+    cout << "-----------------------------" << endl;
+    cout << "\n[FOLHA-DE-PAGAMENTO!]\n" << endl;
+    cout << "SALARIO BRUTO: " << salario_bruto << endl;
+    cout << "IR: " << ir << endl;
+    cout << "INSS:(10%) " << inss << endl;
+    cout << "FGTS:(11%) " << fgts << endl;
+    cout << "SALARIO LIQUIDO: " << salario_liquido << endl;
+
+
+      cout << "Gostaria de reabrir a folha de pagamento? [S/N]" << endl;
+      cin >> ops;
+
+    } while (ops == 'S' || ops == 's');
+
+    cout << "[FOLHA-ENCERRADA!]";
+
+
+    return 0;
+}
+ ```
