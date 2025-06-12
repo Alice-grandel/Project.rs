@@ -322,3 +322,56 @@ int main() {
     cout << "tabuada encerrada";
 }
 ```
+# EXERCICIO c++: 5
+CAIXA REGISTRADORA: Crie um programa em Rust que simule o funcionamento de um caixa registradora. O sistema deve permitir o registro de múltiplos produtos em uma única compra, calcular o valor total, receber o pagamento do cliente, verificar se o valor é suficiente e calcular o troco. Ao final da operação, o programa deve perguntar se o caixa deve ser reaberto para uma nova compra.
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+        char ops;
+
+        do {
+            
+            double preco, total = 0.0, pagamento, troco;
+            int produto_num = 1;
+
+            cout << "\n === CAIXA-REGISTRADORA === \n"  << endl;
+            cout << "\nDigite o preço dos produtos\n" << endl;
+
+            while (true) {
+                cout << "PRODUTO "<< produto_num << ": R$" << endl;
+                cin >> preco;
+                
+            if (preco == 0.0) {
+                break;
+            }
+                total += preco;
+                produto_num++;
+            
+            }
+
+            cout << "TOTAL DA COMPRA DEU: " << total << endl;
+
+
+            cout << "Valor pago pelo cliente " << endl;
+            cin >> pagamento;
+            
+            if (pagamento < total) {
+                cout << "\nCOMPRA INSDIPONIVEL DINHEIRO INSUFICIENTE\n" << endl;
+            } else {
+                troco = pagamento - total;
+                cout << "O troco do cliente é de " << troco << endl;
+            }            
+
+            cout << "--------------------------------" << endl;
+            cout << "Gostaria de reabrir o caixa?";
+            cin >> ops;
+
+        } while (ops == 'S' || ops == 's');
+
+        cout << "\n=== CAIXA REGISTRADORA ENCERRADA ===\n";
+
+}
+```
