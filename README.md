@@ -202,7 +202,7 @@ int main() {
     return 0;
 }
  ```
-# EXERCICIO RUST: 4
+# EXERCICIO c++: 3
 
 CAIXA ELETRONICO: Faça um Programa para um caixa eletrônico.
 ```
@@ -276,5 +276,49 @@ int main() {
 
     cout << "[CAIXA-FECHADO]!";
     
+}
+```
+# EXERCICIO c++: 4
+
+TABUADA: Desenvolva um programa que faça a tabuada de um número qualquer inteiro que será digitado pelo usuário, mas a tabuada não deve necessariamente iniciar em 1 e terminar em 10, o valor inicial e final devem ser informados também pelo usuário, conforme exemplo abaixo:
+```
+Montar a tabuada de: 5
+Começar por: 4
+Terminar em: 7
+
+Vou montar a tabuada de 5 começando em 4 e terminando em 7:
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+
+```
+COGIDO: 
+```
+#include <iostream> 
+
+using namespace std;
+
+int main() {
+
+    int numero, resultado;
+    char ops;
+    do {
+
+    cout << "Digite um numero" << endl;
+    cin >> numero;
+
+
+    for (int i = 4; i <= 7; i++) {
+        resultado = numero * i;
+        cout << numero << "X" << i << " = " << resultado << endl;
+
+    } 
+      cout << "-------------------------------------" << endl;
+      cout << "Gostaria de refazer a tabuada [S/N]?" << endl;
+      cin >> ops;
+    } while (ops == 'S' || ops == 's');
+    
+    cout << "tabuada encerrada";
 }
 ```
