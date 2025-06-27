@@ -331,47 +331,44 @@ using namespace std;
 
 int main() {
         char ops;
+    
+    do {
+        double preco, total = 0.0, pagamento, troco;
+        int produto_num = 1;
 
-        do {
-            
-            double preco, total = 0.0, pagamento, troco;
-            int produto_num = 1;
+        while (true) {
+             cout << "PRODUTO " << produto_num << ":  R$" << endl;
+             cin >> preco;
 
-            cout << "\n === CAIXA-REGISTRADORA === \n"  << endl;
-            cout << "\nDigite o preço dos produtos\n" << endl;
+        if (preco == 0) {
+           break;
+        }
 
-            while (true) {
-                cout << "PRODUTO "<< produto_num << ": R$" << endl;
-                cin >> preco;
-                
-            if (preco == 0.0) {
-                break;
-            }
-                total += preco;
-                produto_num++;
-            
-            }
+        total += preco;
+        produto_num++;
 
-            cout << "TOTAL DA COMPRA DEU: " << total << endl;
+        }
+        
+        cout << "TOTAL DA COMPRA DEU: " << total << endl;
+        
 
+        cout << "Valor pago pelo cliente: " << endl;
+        cin >> pagamento;
+        
+        if (pagamento < total) {
+           cout << "COMPRA INDISPONIVEL DINHEIRO INSUFICIENTE!" << endl;     
+        } else {
+            troco = pagamento - total;
+            cout << "O troco do cliente é de: "<< troco << endl;
+        }
 
-            cout << "Valor pago pelo cliente " << endl;
-            cin >> pagamento;
-            
-            if (pagamento < total) {
-                cout << "\nCOMPRA INSDIPONIVEL DINHEIRO INSUFICIENTE\n" << endl;
-            } else {
-                troco = pagamento - total;
-                cout << "O troco do cliente é de " << troco << endl;
-            }            
+        cout << "GOSTARIA DE FECHAR O CAIXA?" << endl;
+        cin >> ops;
 
-            cout << "--------------------------------" << endl;
-            cout << "Gostaria de reabrir o caixa?";
-            cin >> ops;
+    } while (ops == 'S' || ops == 's');
 
-        } while (ops == 'S' || ops == 's');
+    cout << "\n=== CAIXA-FECHADO ===\n" << endl;
 
-        cout << "\n=== CAIXA REGISTRADORA ENCERRADA ===\n";
-
+    return 0;
 }
 ```
