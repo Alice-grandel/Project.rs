@@ -50,64 +50,10 @@ Funcionalidades:
     Caso o usuário escolha uma operação inválida, exibir uma mensagem de erro.
 
     Perguntar ao usuário se deseja realizar outra operação, repetindo o processo enquanto desejar.
+Codigo: 
+ <img width="2656" height="2284" alt="calculadora em cpp" src="https://github.com/user-attachments/assets/68eef39d-e003-437f-8dbb-c0bdabff1bc0" />
 
-   ```
-  #include <iostream>
-
-using namespace std;
-
-int main() {
-
-    int num1, num2, resultado;
-    char operador, ops;
-
-    do {
-
-
-    cout << "\nDigite o primeiro numero: \n";
-    cin >> num1;
-
-    cout << "\nDigite o operador: (+,-,*,/)\n";
-    cin >> operador;
-    
-    cout << "\nDigite o segundo numero\n";
-    cin >> num2;
-
-      switch (operador) {
-        case '+':
-            cout << "O resultado de " << num1 << " + " << num2 << " = " << num1 + num2 << endl;
-        break;
-
-        case '-':
-            cout << "O resultado de " << num1 << " - " << num2 << " = " << num1 - num2 << endl;
-        break;
-
-        case '*':
-            cout << "O resultado de " << num1 << " * " << num2 << " = " << num1 * num2 << endl;
-        break;
-        
-        case '/':
-                 if (num2 != 0) {
-                 cout << "O resultado de " << num1 << " / " << num2 << " = " << num1 / num2 << endl;
-                 } else {
-                    cout << "\nErro divisão por zero invalida\n";
-                 }
-        break;
-
-        default:
-                cout << "Operador invalido!";
-      }
-      
-        cout << "-------------------------------------" << endl;
-        cout << "\n[GOSTARIA DE REINICIAR A CALCULADORA]\n";
-        cin >> ops;
-
-    } while (ops == 'S' || ops == 's');
-    
-
-    cout << "\n[CALCULADORA ENCERRADA!]\n";
-}
-   ```
+ 
 # EXERCICIO C++: 2
 FOLHA DE PAGAMENTO:
 
