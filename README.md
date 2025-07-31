@@ -182,34 +182,8 @@ Vou montar a tabuada de 5 começando em 4 e terminando em 7:
 
 ```
 COGIDO: 
-```
-#include <iostream> 
+<img width="1680" height="1276" alt="tabuada cplus" src="https://github.com/user-attachments/assets/6ff66802-ee86-4677-8c1a-fd25bfd56ed3" />
 
-using namespace std;
-
-int main() {
-
-    int numero, resultado;
-    char ops;
-    do {
-
-    cout << "Digite um numero" << endl;
-    cin >> numero;
-
-
-    for (int i = 4; i <= 7; i++) {
-        resultado = numero * i;
-        cout << numero << "X" << i << " = " << resultado << endl;
-
-    } 
-      cout << "-------------------------------------" << endl;
-      cout << "Gostaria de refazer a tabuada [S/N]?" << endl;
-      cin >> ops;
-    } while (ops == 'S' || ops == 's');
-    
-    cout << "tabuada encerrada";
-}
-```
 # EXERCICIO c++: 5
 CAIXA REGISTRADORA: Crie um programa em Rust que simule o funcionamento de um caixa registradora. O sistema deve permitir o registro de múltiplos produtos em uma única compra, calcular o valor total, receber o pagamento do cliente, verificar se o valor é suficiente e calcular o troco. Ao final da operação, o programa deve perguntar se o caixa deve ser reaberto para uma nova compra.
 ```
