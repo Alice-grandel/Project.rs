@@ -186,54 +186,10 @@ COGIDO:
 
 # EXERCICIO c++: 5
 CAIXA REGISTRADORA: Crie um programa em Rust que simule o funcionamento de um caixa registradora. O sistema deve permitir o registro de múltiplos produtos em uma única compra, calcular o valor total, receber o pagamento do cliente, verificar se o valor é suficiente e calcular o troco. Ao final da operação, o programa deve perguntar se o caixa deve ser reaberto para uma nova compra.
-```
-#include <iostream>
 
-using namespace std;
+codigo: 
+<img width="2146" height="1996" alt="registradoracpp" src="https://github.com/user-attachments/assets/332e73e1-1fd9-4aa0-a30a-5e8367eb31bc" />
 
-int main() {
-        char ops;
-    
-    do {
-        double preco, total = 0.0, pagamento, troco;
-        int produto_num = 1;
-
-        while (true) {
-             cout << "PRODUTO " << produto_num << ":  R$" << endl;
-             cin >> preco;
-
-        if (preco == 0) {
-           break;
-        }
-
-        total += preco;
-        produto_num++;
-
-        }
-        
-        cout << "TOTAL DA COMPRA DEU: " << total << endl;
-        
-
-        cout << "Valor pago pelo cliente: " << endl;
-        cin >> pagamento;
-        
-        if (pagamento < total) {
-           cout << "COMPRA INDISPONIVEL DINHEIRO INSUFICIENTE!" << endl;     
-        } else {
-            troco = pagamento - total;
-            cout << "O troco do cliente é de: "<< troco << endl;
-        }
-
-        cout << "GOSTARIA DE FECHAR O CAIXA?" << endl;
-        cin >> ops;
-
-    } while (ops == 'S' || ops == 's');
-
-    cout << "\n=== CAIXA-FECHADO ===\n" << endl;
-
-    return 0;
-}
-```
 # EXERCICIO c++: 6
 Um simples e divertido **jogo da velha (tic-tac-toe)** feito em **C++**, jogado no terminal por **dois jogadores**.
 
