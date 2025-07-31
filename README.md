@@ -77,77 +77,19 @@ Faça um programa para cálculo de uma folha de pagamento, considerando os segui
 
 O programa deverá solicitar ao usuário:
 
-    Valor da hora trabalhada.
+  
+   Exemplo de saída: 
+    
+    [FOLHA-DE-PAGAMENTO]
+    SALARIO_BRUTO: R$24420
+    IR:(5%) R$4884
+    INSS:(10%) R$2442
+    FGTS:(11.0) R$2686.2
+    SALARIO_LIQUIDO: R$17094
 
-    Quantidade de horas trabalhadas no mês.
+#CODIGO: 
+<img width="2656" height="2248" alt="folha" src="https://github.com/user-attachments/assets/e34e1b47-07fa-4d78-b455-bab2e31ff2fd" />
 
-    Exemplo de saída: 
-    Salário Bruto:                 : R$ 1100,00
-    IR (5%)                       : R$   55,00
-    INSS (10%)                    : R$  110,00
-    FGTS (11%)                    : R$  121,00
-    Salário Líquido               : R$  935,00
-
-   FOLHA DE PAGAMENTO:
-
- ```
-#include <iostream>
-
-using namespace std;
-
-int main() {
-
-    double salario_hora, hora_trabalhada, salario_bruto, percentual;
-    double ir, inss, fgts, salario_liquido;
-    char ops;
-
-    do {
-            cout << "[BEM-VINDOS!]";
-    cout << "\nQuanto vc ganha por hora?\n" << endl;
-    cin >> salario_hora;
-
-
-    cout << "\nQuantas horas vc trabalha por mes?\n";
-    cin >> hora_trabalhada;
-
-    salario_bruto = salario_hora * hora_trabalhada;
-
-        if  (salario_bruto <= 900.0) {
-            percentual = 0.0;
-        } else if (salario_bruto <= 1500.0) {
-            percentual = 5.0;
-        } else if (salario_bruto <= 2500.0) {
-            percentual = 10.0;
-        } else {
-            percentual = 20.0;
-        }
-
-        ir = salario_bruto * (percentual / 100.0);
-        inss = salario_bruto * 0.10;
-        fgts = salario_bruto * 0.11;
-        salario_liquido = salario_bruto - ir - inss;
-
-
-    cout << "-----------------------------" << endl;
-    cout << "\n[FOLHA-DE-PAGAMENTO!]\n" << endl;
-    cout << "SALARIO BRUTO: " << salario_bruto << endl;
-    cout << "IR: " << ir << endl;
-    cout << "INSS:(10%) " << inss << endl;
-    cout << "FGTS:(11%) " << fgts << endl;
-    cout << "SALARIO LIQUIDO: " << salario_liquido << endl;
-
-
-      cout << "Gostaria de reabrir a folha de pagamento? [S/N]" << endl;
-      cin >> ops;
-
-    } while (ops == 'S' || ops == 's');
-
-    cout << "[FOLHA-ENCERRADA!]";
-
-
-    return 0;
-}
- ```
 # EXERCICIO c++: 3
 
 CAIXA ELETRONICO: Faça um Programa para um caixa eletrônico.
