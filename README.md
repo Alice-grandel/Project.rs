@@ -205,3 +205,10 @@ Um simples e divertido **jogo da velha (tic-tac-toe)** feito em **C++**, jogado 
 
 COGIDO JOGO DA VELHA: 
 <img width="2656" height="3220" alt="velha" src="https://github.com/user-attachments/assets/1f2208ec-be6e-486a-8512-b062c7eb17e2" />
+
+# EXERCICIO CPP: 7
+Um jogo da forca simples programado em C++
+
+codigo:
+<img width="1386" height="961" alt="screenshot-2025-09-21_16-20-36" src="https://github.com/user-attachments/assets/98ea18ee-3751-469d-869b-77a514658d99" />
+
