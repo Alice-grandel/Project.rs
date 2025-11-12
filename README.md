@@ -51,7 +51,7 @@ Funcionalidades:
 
     Perguntar ao usuário se deseja realizar outra operação, repetindo o processo enquanto desejar.
 Codigo: 
- <img width="2656" height="2284" alt="calculadora em cpp" src="https://github.com/user-attachments/assets/68eef39d-e003-437f-8dbb-c0bdabff1bc0" />
+<img width="1041" height="930" alt="image" src="https://github.com/user-attachments/assets/577b3ad4-632e-497d-a572-51147c7345e3" />
 
  
 # EXERCICIO C++: 2
@@ -204,11 +204,12 @@ Um simples e divertido **jogo da velha (tic-tac-toe)** feito em **C++**, jogado 
 - ✅ Interface em modo texto
 
 COGIDO JOGO DA VELHA: 
-<img width="2656" height="3220" alt="velha" src="https://github.com/user-attachments/assets/1f2208ec-be6e-486a-8512-b062c7eb17e2" />
+<img width="2618" height="3420" alt="code-snapshot" src="https://github.com/user-attachments/assets/cfb05fa4-54b8-47af-88cb-8f2e25eaa45b" />
 
 # EXERCICIO CPP: 7
 Um jogo da forca simples programado em C++
 
 codigo:
-<img width="1386" height="961" alt="screenshot-2025-09-21_16-20-36" src="https://github.com/user-attachments/assets/98ea18ee-3751-469d-869b-77a514658d99" />
+<img width="941" height="760" alt="image" src="https://github.com/user-attachments/assets/38033195-2d9b-461e-89f3-a745e0a2e121" />
+
 
