@@ -114,7 +114,7 @@ CAIXA REGISTRADORA: Crie um programa em Rust que simule o funcionamento de um ca
 codigo: 
 <img width="2146" height="1996" alt="registradoracpp" src="https://github.com/user-attachments/assets/332e73e1-1fd9-4aa0-a30a-5e8367eb31bc" />
 
-# EXERCICIO c++: 6
+# EXERCICIO c++: 5
 Um simples e divertido **jogo da velha (tic-tac-toe)** feito em **C++**, jogado no terminal por **dois jogadores**.
 
 ---
@@ -130,7 +130,7 @@ Um simples e divertido **jogo da velha (tic-tac-toe)** feito em **C++**, jogado 
 COGIDO JOGO DA VELHA: 
 <img width="2618" height="3420" alt="code-snapshot" src="https://github.com/user-attachments/assets/cfb05fa4-54b8-47af-88cb-8f2e25eaa45b" />
 
-# EXERCICIO CPP: 7
+# EXERCICIO CPP: 6
 Um jogo da forca simples programado em C++
 
 codigo:
