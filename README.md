@@ -134,6 +134,6 @@ COGIDO JOGO DA VELHA:
 Um jogo da forca simples programado em C++
 
 codigo:
-<img width="941" height="760" alt="image" src="https://github.com/user-attachments/assets/38033195-2d9b-461e-89f3-a745e0a2e121" />
+<img width="1167" height="962" alt="image" src="https://github.com/user-attachments/assets/54f2ff51-0cbc-4458-87f8-e1cf951f8fc5" />
 
 
